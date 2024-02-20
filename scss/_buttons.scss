@@ -1,0 +1,93 @@
+.btn-nav {
+    position: relative;
+    font-family: "TenorSans-Regular";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    .nav-label {
+        display: inline-block;
+        padding: 10px 0px;
+        min-width: 123px;
+        text-align: center;
+    }
+
+    &:hover {
+        color: $red;
+        transition: .3s;
+        .nav-icon {
+            transform: scale(0.9) skew(0deg, 0deg);
+
+            &:before,
+            &:after {
+                width: 60px;
+            }
+            &:before {
+                left: calc(50% - 30px);
+            }
+            &:after {
+                right: calc(50% - 30px);
+            }
+
+            span {
+                &:before,
+                &:after {
+                    height: 0;
+                }
+            }
+        }
+    }
+
+    .nav-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: skew(-40deg, 0deg);
+        transition: all 0.2s;
+
+        &:before,
+        &:after {
+            content: "";
+            height: 1px;
+            width: 30px;
+            position: absolute;
+            display: block;
+            background: $red;
+            transition: all 0.2s;
+            transition-delay: 0.4s;
+        }
+        &:before {
+            left: 0;
+            top: 0;
+        }
+        &:after {
+            right: 0;
+            bottom: 0;
+        }
+        span {
+            &:before,
+            &:after {
+                content: "";
+                background: $red;
+                position: absolute;
+                display: block;
+                width: 2px;
+                height: 30px;
+                transition: all 0.2s;
+                transition-delay: 0.2s;
+            }
+            &:before {
+                left: 0;
+                top: 0;
+            }
+            &:after {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
