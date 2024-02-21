@@ -7,22 +7,23 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/bootstrap/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/main.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="container d-grid">
-            <a href="#" class="logo my-auto">
+        <div class="container d-grid  align-items-center">
+            <a href="#" class="logo">
                 <h4><span class="red">An</span>Design</h4>
                 <p>Web Studio</p>
             </a>
-            <ul class="nav row">
+            <ul class="nav row d-none d-lg-flex">
                 <li class="col-md-3"><a href="#">
                         <div class="btn-nav">
                             <span class="nav-label">Услуги</span>
@@ -60,13 +61,14 @@
                     </a>
                 </li>
             </ul>
-            <div class="d-flex justify-content-end align-items-center">
+            <div class="d-flex justify-content-center justify-content-xl-end">
                 <div class="phone text-center">
                     <h4><span><img src="/img/phone.svg" alt=""></span> +7 (800) 555 35 35</h4>
                     <a href="#">Заказать звонок</a>
                 </div>
             </div>
-            <!-- <div class="burger col-2 d-xl-none">
+
+            <div class="burger d-lg-none d-flex justify-content-end justify-content-lg-center">
                 <a href="#" id="toggle"><span></span></a>
                 <div id="menu">
                     <ul>
@@ -76,7 +78,7 @@
                         <li class=""><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </header>
 
@@ -140,8 +142,8 @@
                 <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
                     <div class="h-100 ">
                         <div class="row mb-4">
-                            <h3 class="col-8">Увеличит<br> Продажи</h3>
-                            <img class="icon col-3" src="/img/icon1.svg">
+                            <h3 class="col-4 col-sm-8">Увеличит<br> Продажи</h3>
+                            <img class="icon col-3 px-2 px-lg-0" src="/img/icon1.svg">
                         </div>
                         <p>В интернет-магазине количество потенциальных клиентов намного больше, чем в оффлайне</p>
                     </div>
@@ -149,8 +151,8 @@
                 <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
                     <div class="h-100 ">
                         <div class="row mb-4">
-                            <h3 class="col-8">Поднимет<br> Имидж</h3>
-                            <img class="icon col-3" src="/img/icon2.svg">
+                            <h3 class="col-4 col-sm-8">Поднимет<br> Имидж</h3>
+                            <img class="icon col-3 px-2 px-lg-0" src="/img/icon2.svg">
                         </div>
                         <p>Сайт формирует лицо компании, узнаваемость бренда, содает положительное восприятие продуктов
                             компании у потребителя</p>
@@ -159,53 +161,34 @@
                 <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
                     <div class="h-100 ">
                         <div class="row mb-4">
-                            <h3 class="col-8">Повысит<br> Лояльность </h3>
-                            <img class="icon col-3" src="/img/icon3.svg">
+                            <h3 class="col-4 col-sm-8">Повысит<br> Лояльность </h3>
+                            <img class="icon col-3 px-2 px-lg-0" src="/img/icon3.svg">
                         </div>
                         <p>Сайт упрощает коммуникацию с клиентами. Позволяет понять, что им интересно и важно.</p>
                     </div>
                 </div>
             </div>
-
-
             <h2 class="my-5">Мы гарантируем</h2>
-            <div class="row mb-5">
-                <div class="row">
-                    <div class="row col-12 col-sm-5">
-                        <span class="red big-num col-2">01</span>
-                        <h4 class="col-10 d-flex align-items-center">Фиксированную цену</h4>
-                    </div>
-                    <div class="col-12 col-sm-7 d-flex align-items-center">
-                        <p>Цена за проект не изменится в процессе разработки.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row col-12 col-sm-5">
-                        <span class="red big-num col-2">02</span>
-                        <h4 class="col-10 d-flex align-items-center">Соблюдение сроков</h4>
-                    </div>
-                    <div class="col-12 col-sm-7 d-flex align-items-center">
-                        <p>Проект всегда будет реализован в оговоренные сроки.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row col-12 col-sm-5">
-                        <span class="red big-num col-2">03</span>
-                        <h4 class="col-10 d-flex align-items-center">Высокое качество</h4>
-                    </div>
-                    <div class="col-12 col-sm-7 d-flex align-items-center">
-                        <p>Мы гарантируем, что Ваш сайт будет уникальным и будет соответствовать всем требованиям
-                            качественной
-                            разработки.</p>
-                    </div>
-                </div>
+            <div class="d-grid guarantees-grid aligne-items-md-center">
+                <span class="red big-num">01</span>
+                <h4 class="">Фиксированную цену</h4>
+                <p>Цена за проект не изменится в процессе разработки.</p>
+                <span class="red big-num">02</span>
+                <h4 class="">Соблюдение сроков</h4>
+                <p>Проект всегда будет реализован в оговоренные сроки.</p>
+                <span class="red big-num">03</span>
+                <h4 class="">Высокое качество</h4>
+                <p>Мы гарантируем, что Ваш сайт будет уникальным и будет соответствовать всем требованиям качественной
+                    разработки.</p>
             </div>
-            <div class=" d-flex justify-content-center">
+
+            <div class="d-flex justify-content-center">
                 <a href="#" class="btn mt-5">Узнать Стоимость разработки сайта</a>
             </div>
+        </div>
     </section>
-    <section class="collage">
-        <div class="post p-5">
+    <section class="collage py-5">
+        <div class="post p-5 m-5 m-xl-0">
             <h3>Узнайте предварительную <span class="red">цену</span> <br>на разработку сайта</h3>
             <p class="my-4">Ответьте на 3 коротких вопроса за <b>20 секунд</b> и получите предварительный расчет
                 стоимости разработки сайта. <br>
@@ -219,7 +202,7 @@
         <div class="container my-5">
             <h2 class="mb-5">Портфолио <span class="red-gradient">проектов</span></h2>
             <div class="row">
-                <div class="col-12 col-sm-6 p-3"><a href="#" class="project">
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
                         <div class="project-toper p-4">
                             <h4 class="mb-3">СтройТерМех</h4>
                             <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей
@@ -227,7 +210,7 @@
                         </div>
                         <img src="/img/project1.png">
                     </a></div>
-                <div class="col-12 col-sm-6 p-3"><a href="#" class="project">
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
                         <div class="project-toper p-4">
                             <h4 class="mb-3">MathMastery</h4>
                             <p>Одностранеичный сайт репетитора по математике, который является визитной карточкой
@@ -235,7 +218,7 @@
                         </div>
                         <img src="/img/project2.png">
                     </a></div>
-                <div class="col-12 col-sm-6 p-3"><a href="#" class="project">
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
                         <div class="project-toper p-4">
                             <h4 class="mb-3">BusTicketEase</h4>
                             <p>Веб-сервис по заказу и продажи билетов на автобус, в котором осуществляется поиск нужного
@@ -243,7 +226,7 @@
                         </div>
                         <img src="/img/project3.png">
                     </a></div>
-                <div class="col-12 col-sm-6 p-3"><a href="#" class="project">
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
                         <div class="project-toper p-4">
                             <h4 class="mb-3">BloomBlingStar</h4>
                             <p>Адаптивный интернет магазин для магазина ювелирных украшений, который представляет болоее
@@ -252,7 +235,7 @@
                         <img src="/img/project4.png">
                     </a></div>
             </div>
-            <div class="my-5 text-end">
+            <div class="my-5 text-center text-md-end">
                 <a href="#" class="card-btn card-btn--white "> <svg>
                         <rect x="0" y="0" fill="none" width="100%" height="100%" />
                     </svg>Посмотреть ещё</a>
@@ -263,7 +246,105 @@
     <section class="progress-work py-5">
         <div class="container my-5">
             <h2 class="mb-5"><span class="red">Ход работ</span> по проекту</h2>
-            <div class="row step-map">
+            <div class="swiper d-block d-md-none">
+                <div class="swiper-wrapper step-map">
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">01</p>
+                                <h3 class="col-7 p-xl-0">Анализируем будущий проект</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step1.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">02</p>
+                                <h3 class="col-7 p-xl-0">Пишем техническое задание</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">03</p>
+                                <h3 class="col-7 p-xl-0">Создаем прототип</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">04</p>
+                                <h3 class="col-7 p-xl-0">Разрабатываем дизайн</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step4.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">05</p>
+                                <h3 class="col-7 p-xl-0">Адаптивная верстка</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step5.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">06</p>
+                                <h3 class="col-7 p-xl-0">Программная настройка</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step6.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">07</p>
+                                <h3 class="col-7 p-xl-0">Наполнение контентом</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step7.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">08</p>
+                                <h3 class="col-7 p-xl-0">Тестирование и запуск</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step8.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="row step-map d-none d-md-flex">
                 <div class="col-12 col-md-6 p-3">
                     <div class="row">
                         <p class="col-5 m-0">01</p>
@@ -340,6 +421,9 @@
                     </div>
                 </div>
             </div>
+            <div class = "d-flex justify-content-center mt-5">
+                <a href="#" class="btn mx-auto">Заказать Проект</a>
+            </div>
         </div>
     </section>
     <section class="feedback">
@@ -354,7 +438,7 @@
                         <input class="mt-3 " type="email" id="mail" name="mail" placeholder="E-mail">
                     </div>
                     <div class="col-12 col-md-6 mb-4 mb-md-0">
-                        <textarea class="mb-5 p-2" id="description-task" name="description-task"
+                        <textarea class="mt-5 mb-md-0 mb-5 p-2" id="description-task" name="description-task"
                             placeholder="Опишите кратко, что Вам нужно"></textarea>
                         <button type="submit" class="btn">отправить сообщение</button>
                     </div>
@@ -366,51 +450,51 @@
     <section class="services py-5">
         <div class="container my-5">
             <h2 class="mb-5">Дополнительные <span class="red">услуги</span></h2>
-            <div class="row">
-                <div class="col-12 col-md-6 p-3 p-md-0">
-                    <img src="/img/services1.png">
+            <div class="row justify-content-between">
+                <div class="row col-12 col-md-6 col-xl-12">
+                    <div class="col-12 col-xl-6 p-3 p-md-0">
+                        <img class="mb-4 mb-xl-0" src="/img/services1.png">
+                    </div>
+                    <div class="col-12 col-xl-6 p-3 p-md-0 d-flex align-items-center">
+                        <div class="services-content mx-0 mx-md-auto">
+                            <h3 class="mb-4">Маркетинг и продвижение</h3>
+                            <ul>
+                                <li>Поисковая оптимизация</li>
+                                <li>Уникальный контент</li>
+                                <li>Контекстная и банерная реклама</li>
+                                <li>Продвижение в соцсетях</li>
+                            </ul>
+                            <a href="#" class="btn mt-4">Заказать продвижение</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 p-3 p-md-0 d-flex align-items-center">
-                    <div class="services-content mx-auto">
-                        <h3 class="mb-4">Маркетинг и продвижение</h3>
-                        <ul>
-                            <li>Поисковая оптимизация</li>
-                            <li>Уникальный контент</li>
-                            <li>Контекстная и банерная реклама</li>
-                            <li>Продвижение в соцсетях</li>
-                        </ul>
-                        <a href="#" class="btn mt-4">Заказать продвижение</a>
+                <div class="row col-12 col-md-6 col-xl-12 rev">
+                    <div class="col-12 col-xl-6 p-3 p-md-0 d-flex align-items-center rev-2">
+                        <div class="services-content mx-0 mx-md-auto">
+                            <h3 class="mb-4">Дизайн</h3>
+                            <ul>
+                                <li>Разработка корпоративного стиля</li>
+                                <li>Разработка логотипа</li>
+                                <li>Уникальный дизайн для Вашего сайта</li>
+                            </ul>
+                            <a href="#" class="btn mt-4">Заказать продвижение</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 p-3 p-md-0 rev-1">
+                        <img class="mb-4 mb-xl-0" src="/img/services2.png">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 p-3 p-md-0 d-flex align-items-center">
-                    <div class="services-content mx-auto">
-                        <h3 class="mb-4">Дизайн</h3>
-                        <ul>
-                            <li>Разработка корпоративного стиля</li>
-                            <li>Разработка логотипа</li>
-                            <li>Уникальный дизайн для Вашего сайта</li>
-                        </ul>
-                        <a href="#" class="btn mt-4">Заказать продвижение</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 p-3 p-md-0">
-                    <img src="/img/services2.png">
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
     <footer class="footer py-5">
         <div class="container d-grid">
-            <a href="#" class="logo">
+            <a href="#" class="logo mx-auto mx-lg-0">
                 <h4><span class="red">An</span>Design</h4>
                 <p>Web Studio</p>
             </a>
-            <ul class="nav row">
+            <ul class="nav row d-none d-lg-flex">
                 <li class="col-md-3"><a href="#">
                         <div class="btn-nav">
                             <span class="nav-label">Услуги</span>
@@ -448,7 +532,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="social d-flex align-items-center justify-content-end">
+            <div class="social d-flex align-items-center justify-content-end  mx-auto mx-lg-0">
                 <a href="#" class="youtube-icon">
                     <svg fill="white" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -468,14 +552,11 @@
                     </svg>
                 </a>
             </div>
-            <p class="year m-0 mt-5">
+            <p class="year m-auto m-lg-0 mt-lg-5">
                 ©2023 AnDesign Создание сайтов для бизнеса
             </p>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
