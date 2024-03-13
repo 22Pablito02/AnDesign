@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AnDesigne</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-grid  align-items-center">
+            <a href="/pages/index.html" class="logo">
+                <h4><span class="red">An</span>Design</h4>
+                <p>Web Studio</p>
+            </a>
+            <ul class="nav row d-none d-lg-flex">
+                <li class="col-md-3"><a href="/pages/index.html#serv">
+                        <div class="btn-nav">
+                            <span class="nav-label">Услуги</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/index.html#guar">
+                        <div class="btn-nav">
+                            <span class="nav-label">Цены</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/index.html#port">
+                        <div class="btn-nav">
+                            <span class="nav-label">Портфолио</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/contact.html">
+                        <div class="btn-nav">
+                            <span class="nav-label">Контакты</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center justify-content-xl-end">
+                <div class="phone text-center">
+                    <h4><span><img src="/img/phone.svg" alt=""></span> +7 (800) 555 35 35</h4>
+                    <a id="order_call_btn" href="#">Заказать звонок</a>
+                </div>
+            </div>
+
+            <div class="burger d-lg-none d-flex justify-content-end justify-content-lg-center">
+                <a href="#" id="toggle"><span></span></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="/pages/index.html#serv">Услуги</a></li>
+                        <li><a href="/pages/index.html#guar">Цены</a></li>
+                        <li><a href="/pages/index.html#port">Портфолио</a></li>
+                        <li><a href="/pages/contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="feedback">
+        <div class="container">
+            <h2 class="mb-5">Контактная <span class="red-gradient">информация</span></h2>
+            <div class="social social--cotnact d-flex mb-4">
+                <a href="https://www.youtube.com/" target="_blank" class="youtube-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.2651 17.1181V7.09696C17.8226 8.77094 20.5778 10.388 23.8365 12.1315C21.1488 13.622 17.8226 15.2945 14.2651 17.1181ZM34.0911 2.11301C33.4774 1.30451 32.4315 0.675158 31.318 0.466801C28.0451 -0.154716 7.62676 -0.156484 4.35563 0.466801C3.46269 0.634194 2.66756 1.03881 1.98452 1.66745C-0.893504 4.3387 0.00833246 18.6637 0.702048 20.9842C0.993762 21.9886 1.37087 22.713 1.8458 23.1884C2.45769 23.8171 3.29547 24.2499 4.25778 24.444C6.95259 25.0014 20.8358 25.3131 31.2611 24.5277C32.2216 24.3603 33.0718 23.9135 33.7424 23.2582C36.4034 20.5976 36.222 5.46809 34.0911 2.11301Z" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/" target="_blank" class="vk-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.7074 12.0254C22.0217 11.7299 22.0217 10.6012 21.9792 9.81528C21.8077 7.01568 22.6649 2.74163 21.6363 0.924486C20.9081 -0.156997 17.3932 -0.0579657 15.251 0.089795C14.6503 0.188826 13.9221 0.335016 13.4078 0.630538C12.8936 0.926059 12.3793 1.4165 12.3793 1.85821C12.3793 2.49641 13.6657 2.39895 14.1361 3.23364C14.6503 4.11863 14.6503 6.03323 14.6503 7.60515C14.6503 9.4223 14.3925 11.8305 13.7507 11.9279C12.7647 11.9767 12.2079 10.8465 11.6936 10.0118C10.665 8.39112 9.63646 6.37591 8.86436 4.41101C8.47899 3.37983 8.26368 2.24962 7.70689 1.80791C6.84976 1.1194 5.30692 1.07068 3.80659 1.11941C2.43518 1.16813 0.463094 0.971645 0.0777271 1.90537C-0.222612 2.93655 0.42058 3.919 0.763433 4.75526C2.52021 9.12678 4.4059 12.9591 6.72084 16.5934C8.86436 19.9825 10.8776 22.6846 14.8204 24.1088C15.9354 24.5017 20.8203 25.632 21.8064 24.1088C22.1492 23.5193 22.0642 22.1926 22.2356 21.2101C22.407 20.2277 22.621 19.2452 23.4356 19.1965C24.1213 19.1478 24.5067 19.8347 24.9359 20.3267C25.4077 20.8675 25.7931 21.3092 26.1359 21.8012C26.9505 22.7349 27.8077 24.0113 28.8362 24.5033C30.2501 25.1918 32.4362 24.9953 34.4933 24.8963C36.165 24.8476 37.365 24.4546 37.4939 23.3244C37.5803 22.4394 36.7218 21.163 36.2076 20.4258C34.9212 18.6086 34.3219 18.0679 32.8641 16.3969C32.2209 15.6597 31.4063 14.8737 31.4063 13.9903C31.3637 13.4496 31.7491 12.9591 32.092 12.4184C33.5923 9.86401 35.0926 8.04687 36.464 5.39346C36.8494 4.6075 37.7504 2.79036 37.4075 1.90537C37.0222 0.922915 34.8787 1.21686 33.5498 1.21686C31.8355 1.21686 29.607 1.0691 29.1777 1.46208C28.3631 2.10028 28.0202 3.13304 27.6349 4.11549C26.7777 6.37591 25.6203 8.68349 24.4203 10.4032C23.991 10.9926 23.1778 12.2203 22.706 12.0238L22.7074 12.0254Z" />
+                    </svg>
+                </a>
+                <a href="https://web.telegram.org/a/" target="_blank" class="tg-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.771 16.9748L11.2747 23.9548C11.9847 23.9548 12.2922 23.6498 12.661 23.2836L15.9897 20.1023L22.8872 25.1536C24.1522 25.8586 25.0435 25.4873 25.3847 23.9898L29.9122 2.7748L29.9135 2.77355C30.3147 0.903554 29.2372 0.172304 28.0047 0.631054L1.39223 10.8198C-0.424016 11.5248 -0.396516 12.5373 1.08348 12.9961L7.88723 15.1123L23.691 5.22356C24.4347 4.73106 25.111 5.00356 24.5547 5.49606L11.771 16.9748Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="contact-list">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <b>Телефон:</b> <a href="tel:+78005553535"> +7 (800) 555 35 35</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-at-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                        <path
+                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                    </svg>
+                    <b>E-mail:</b> <a href="mailto:AnDesign@anweb.ru">AnDesign@anweb.ru</a>
+                </p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-fill"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411" />
+                    </svg>
+                    <b>Адрес:</b> Москва, Ленинградский проспект 64
+                </p>
+            </div>
+        <div class = "map my-5 pb-5">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43d39940a86379ec042c71a9ede5c9c7f72df7143307473d5064d2cf2f7ea209&amp;source=constructor" width="750" height="490" frameborder="0"></iframe>
+           
+        </div>
+            <form action="index.html" method="post">
+                <p class="mb-5">Оставьте свою заявку и мы с вами свяжемся</p>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <input class="mb-5" type="text" id="name" name="name" placeholder="Имя">
+                        <input class="mb-5 mt-3" id="number_or" type="tel" name="number_or" placeholder="Tелефон">
+                        <input class="mt-3 " type="email" id="mail" name="mail" placeholder="E-mail">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <textarea class="mt-5 mt-md-0 mb-5 p-2" id="description-task" name="description-task"
+                            placeholder="Опишите кратко, что Вам нужно"></textarea>
+                        <button type="submit" class="btn">отправить сообщение</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container d-grid">
+            <a href="/pages/index.html" class="logo mx-auto mx-lg-0">
+                <h4><span class="red">An</span>Design</h4>
+                <p>Web Studio</p>
+            </a>
+            <ul class="nav row d-none d-lg-flex">
+                <li class="col-md-3"><a href="/pages/index.html#serv">
+                        <div class="btn-nav">
+                            <span class="nav-label">Услуги</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/index.html#guar">
+                        <div class="btn-nav">
+                            <span class="nav-label">Цены</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/index.html#port">
+                        <div class="btn-nav">
+                            <span class="nav-label">Портфолио</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/contact.html">
+                        <div class="btn-nav">
+                            <span class="nav-label">Контакты</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="social d-flex align-items-center justify-content-end  mx-auto mx-lg-0">
+                <a href="https://www.youtube.com/" target="_blank" class="youtube-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.2651 17.1181V7.09696C17.8226 8.77094 20.5778 10.388 23.8365 12.1315C21.1488 13.622 17.8226 15.2945 14.2651 17.1181ZM34.0911 2.11301C33.4774 1.30451 32.4315 0.675158 31.318 0.466801C28.0451 -0.154716 7.62676 -0.156484 4.35563 0.466801C3.46269 0.634194 2.66756 1.03881 1.98452 1.66745C-0.893504 4.3387 0.00833246 18.6637 0.702048 20.9842C0.993762 21.9886 1.37087 22.713 1.8458 23.1884C2.45769 23.8171 3.29547 24.2499 4.25778 24.444C6.95259 25.0014 20.8358 25.3131 31.2611 24.5277C32.2216 24.3603 33.0718 23.9135 33.7424 23.2582C36.4034 20.5976 36.222 5.46809 34.0911 2.11301Z" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/" target="_blank" class="vk-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.7074 12.0254C22.0217 11.7299 22.0217 10.6012 21.9792 9.81528C21.8077 7.01568 22.6649 2.74163 21.6363 0.924486C20.9081 -0.156997 17.3932 -0.0579657 15.251 0.089795C14.6503 0.188826 13.9221 0.335016 13.4078 0.630538C12.8936 0.926059 12.3793 1.4165 12.3793 1.85821C12.3793 2.49641 13.6657 2.39895 14.1361 3.23364C14.6503 4.11863 14.6503 6.03323 14.6503 7.60515C14.6503 9.4223 14.3925 11.8305 13.7507 11.9279C12.7647 11.9767 12.2079 10.8465 11.6936 10.0118C10.665 8.39112 9.63646 6.37591 8.86436 4.41101C8.47899 3.37983 8.26368 2.24962 7.70689 1.80791C6.84976 1.1194 5.30692 1.07068 3.80659 1.11941C2.43518 1.16813 0.463094 0.971645 0.0777271 1.90537C-0.222612 2.93655 0.42058 3.919 0.763433 4.75526C2.52021 9.12678 4.4059 12.9591 6.72084 16.5934C8.86436 19.9825 10.8776 22.6846 14.8204 24.1088C15.9354 24.5017 20.8203 25.632 21.8064 24.1088C22.1492 23.5193 22.0642 22.1926 22.2356 21.2101C22.407 20.2277 22.621 19.2452 23.4356 19.1965C24.1213 19.1478 24.5067 19.8347 24.9359 20.3267C25.4077 20.8675 25.7931 21.3092 26.1359 21.8012C26.9505 22.7349 27.8077 24.0113 28.8362 24.5033C30.2501 25.1918 32.4362 24.9953 34.4933 24.8963C36.165 24.8476 37.365 24.4546 37.4939 23.3244C37.5803 22.4394 36.7218 21.163 36.2076 20.4258C34.9212 18.6086 34.3219 18.0679 32.8641 16.3969C32.2209 15.6597 31.4063 14.8737 31.4063 13.9903C31.3637 13.4496 31.7491 12.9591 32.092 12.4184C33.5923 9.86401 35.0926 8.04687 36.464 5.39346C36.8494 4.6075 37.7504 2.79036 37.4075 1.90537C37.0222 0.922915 34.8787 1.21686 33.5498 1.21686C31.8355 1.21686 29.607 1.0691 29.1777 1.46208C28.3631 2.10028 28.0202 3.13304 27.6349 4.11549C26.7777 6.37591 25.6203 8.68349 24.4203 10.4032C23.991 10.9926 23.1778 12.2203 22.706 12.0238L22.7074 12.0254Z" />
+                    </svg>
+                </a>
+                <a href="https://web.telegram.org/a/" target="_blank" class="tg-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.771 16.9748L11.2747 23.9548C11.9847 23.9548 12.2922 23.6498 12.661 23.2836L15.9897 20.1023L22.8872 25.1536C24.1522 25.8586 25.0435 25.4873 25.3847 23.9898L29.9122 2.7748L29.9135 2.77355C30.3147 0.903554 29.2372 0.172304 28.0047 0.631054L1.39223 10.8198C-0.424016 11.5248 -0.396516 12.5373 1.08348 12.9961L7.88723 15.1123L23.691 5.22356C24.4347 4.73106 25.111 5.00356 24.5547 5.49606L11.771 16.9748Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="year m-auto m-lg-0 mt-lg-5">
+                ©2023 AnDesign Создание сайтов для бизнеса
+            </p>
+        </div>
+    </footer>
+
+    <div class="order_call container p-5">
+        <svg class="close" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 1L18.5 19M18.5 1L0.5 19" stroke="#888" stroke-width="1.02857" />
+        </svg>
+        <h3 class="mb-5">Заказать звонок</h3>
+        <p>Оставьте номер телефона и я перезвоню Вам <b>в течении 30 минут</b> и подробно <b>отвечу</b> на все вопросы
+            по созданию сайта</p>
+        <form class="mt-5" action="index.html" method="post">
+            <input id="number_or" type="tel" name="number_or" value="+7" placeholder="+7">
+            <div>
+                <button type="submit" class="btn mt-5">Заказать звонок</button>
+            </div>
+        </form>
+    </div>
+    <div id="overlay"></div>
+</body>

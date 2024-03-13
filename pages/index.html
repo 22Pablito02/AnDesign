@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AnDesigne</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/sliders.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-grid  align-items-center">
+            <a href="#" class="logo">
+                <h4><span class="red">An</span>Design</h4>
+                <p>Web Studio</p>
+            </a>
+            <ul class="nav row d-none d-lg-flex">
+                <li class="col-md-3"><a href="#serv">
+                        <div class="btn-nav">
+                            <span class="nav-label">Услуги</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="#guar">
+                        <div class="btn-nav">
+                            <span class="nav-label">Цены</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="#port">
+                        <div class="btn-nav">
+                            <span class="nav-label">Портфолио</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/contact.html">
+                        <div class="btn-nav">
+                            <span class="nav-label">Контакты</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-center justify-content-xl-end">
+                <div class="phone text-center">
+                    <h4><span><img src="/img/phone.svg" alt=""></span> +7 (800) 555 35 35</h4>
+                    <a id="order_call_btn" href="#">Заказать звонок</a>
+                </div>
+            </div>
+
+            <div class="burger d-lg-none d-flex justify-content-end justify-content-lg-center">
+                <a href="#" id="toggle"><span></span></a>
+                <div id="menu">
+                    <ul>
+                        <li class=""><a href="#serv">Услуги</a></li>
+                        <li class=""><a href="#guar">Цены</a></li>
+                        <li class=""><a href="#port">Портфолио</a></li>
+                        <li class=""><a href="/pages/contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="preview">
+        <div class="container">
+            <h1>Разработка <span class="red-gradient">Сайтов</span><br>
+                для бизнеса</h1>
+            <p>Проектирование, разработка, тестирование и поддержка интернет-магазинов, веб-сервисов, приложений,
+                продающих и корпоративных сайтов</p>
+            <a class="btn" href = "/pages/costCalculation.html">Расcчитать Стоимость</a>
+        </div>
+    </section>
+    <section id="serv" class="py-5">
+        <div class="container row">
+            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
+                <div class="card h-100 p-4 p-xl-5 gap-4">
+                    <h2>Интернет магазины</h2>
+                    <p>Позволяют увеличить число покупателей, предложив им возможность дистанционного заказа и доставки
+                        товаров по месту назначения.</p>
+                    <a href="/pages/store.html" class="card-btn mt-auto">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
+                <div class="card h-100 p-4 p-xl-5 gap-4">
+                    <h2>Сайты компаний</h2>
+                    <p>Представляют компанию в сети интернет, формируют имидж среди потенциальных партнеров, знакомят с
+                        услугами и товарами компании.</p>
+                    <a href="/pages/companyWebsites.html" class="card-btn mt-auto">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
+                <div class="card h-100 p-4 p-xl-5 gap-4">
+                    <h2>Landing Page</h2>
+                    <p>Разарабатывается для продажи какой-либо одной услуги или небольшого количества товаров для
+                        целевой аудитории.</p>
+                    <a href="/pages/landingPage.html" class="card-btn mt-auto">
+                        <svg>
+                            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                        </svg>
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="guar" class="guarantees py-5">
+        <div class="container  my-5">
+            <h2 class="mb-5">Грамотно разработанный <span class="red-gradient">сайт</span></h2>
+            <div class="row pb-5">
+                <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
+                    <div class="h-100 ">
+                        <div class="row mb-4">
+                            <h3 class="col-4 col-sm-8">Увеличит<br> Продажи</h3>
+                            <img class="icon col-3 px-2 px-lg-0" src="/img/icon1.svg">
+                        </div>
+                        <p>В интернет-магазине количество потенциальных клиентов намного больше, чем в оффлайне</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
+                    <div class="h-100 ">
+                        <div class="row mb-4">
+                            <h3 class="col-4 col-sm-8">Поднимет<br> Имидж</h3>
+                            <img class="icon col-3 px-2 px-lg-0" src="/img/icon2.svg">
+                        </div>
+                        <p>Сайт формирует лицо компании, узнаваемость бренда, содает положительное восприятие продуктов
+                            компании у потребителя</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-3 mb-sm-4">
+                    <div class="h-100 ">
+                        <div class="row mb-4">
+                            <h3 class="col-4 col-sm-8">Повысит<br> Лояльность </h3>
+                            <img class="icon col-3 px-2 px-lg-0" src="/img/icon3.svg">
+                        </div>
+                        <p>Сайт упрощает коммуникацию с клиентами. Позволяет понять, что им интересно и важно.</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="my-5">Мы гарантируем</h2>
+            <div class="d-grid guarantees-grid aligne-items-md-center">
+                <span class="red big-num">01</span>
+                <h4 class="">Фиксированную цену</h4>
+                <p>Цена за проект не изменится в процессе разработки.</p>
+                <span class="red big-num">02</span>
+                <h4 class="">Соблюдение сроков</h4>
+                <p>Проект всегда будет реализован в оговоренные сроки.</p>
+                <span class="red big-num">03</span>
+                <h4 class="">Высокое качество</h4>
+                <p>Мы гарантируем, что Ваш сайт будет уникальным и будет соответствовать всем требованиям качественной
+                    разработки.</p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <a href="/pages/costCalculation.html" class="btn mt-5">Узнать Стоимость разработки сайта</a>
+            </div>
+        </div>
+    </section>
+    <section class="collage py-5">
+        <div class="post p-5 m-5 m-xl-0">
+            <h3>Узнайте предварительную <span class="red">цену</span> <br>на разработку сайта</h3>
+            <p class="my-4">Ответьте на 3 коротких вопроса за <b>20 секунд</b> и получите предварительный расчет
+                стоимости разработки сайта. <br>
+                А также <b>скидку 10%</b> на будущую разработку.</p>
+            <a href="/pages/costCalculation.html" class="btn">Расчет стоимости</a>
+        </div>
+        <img class="collage-img" src="/img/collage.png">
+    </section>
+
+    <section id="port" class="portfolio py-5">
+        <div class="container my-5">
+            <h2 class="mb-5">Портфолио <span class="red-gradient">проектов</span></h2>
+            <div class="row">
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
+                        <div class="project-toper p-4">
+                            <h4 class="mb-3">СтройТерМех</h4>
+                            <p>Корпоративный сайт для промышленной компании, которая занимается производством емкостей
+                                для пищевой промышленности</p>
+                        </div>
+                        <img src="/img/project1.png">
+                    </a></div>
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
+                        <div class="project-toper p-4">
+                            <h4 class="mb-3">MathMastery</h4>
+                            <p>Одностранеичный сайт репетитора по математике, который является визитной карточкой
+                                учителя</p>
+                        </div>
+                        <img src="/img/project2.png">
+                    </a></div>
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
+                        <div class="project-toper p-4">
+                            <h4 class="mb-3">BusTicketEase</h4>
+                            <p>Веб-сервис по заказу и продажи билетов на автобус, в котором осуществляется поиск нужного
+                                направления и рейса </p>
+                        </div>
+                        <img src="/img/project3.png">
+                    </a></div>
+                <div class="col-12 col-md-6 p-3"><a href="#" class="project">
+                        <div class="project-toper p-4">
+                            <h4 class="mb-3">BloomBlingStar</h4>
+                            <p>Адаптивный интернет магазин для магазина ювелирных украшений, который представляет болоее
+                                1000 товаров</p>
+                        </div>
+                        <img src="/img/project4.png">
+                    </a></div>
+            </div>
+            <div class="my-5 text-center text-md-end">
+                <a href="#port" class="card-btn card-btn--white "> <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                    </svg>Посмотреть ещё</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="progress-work py-5">
+        <div class="container my-5">
+            <h2 class="mb-5"><span class="red">Ход работ</span> по проекту</h2>
+            <div class="swiper oneSwiper d-block d-md-none">
+                <div class="swiper-wrapper step-map">
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">01</p>
+                                <h3 class="col-7 p-xl-0">Анализируем будущий проект</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step1.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">02</p>
+                                <h3 class="col-7 p-xl-0">Пишем техническое задание</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">03</p>
+                                <h3 class="col-7 p-xl-0">Создаем прототип</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">04</p>
+                                <h3 class="col-7 p-xl-0">Разрабатываем дизайн</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step4.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">05</p>
+                                <h3 class="col-7 p-xl-0">Адаптивная верстка</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step5.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">06</p>
+                                <h3 class="col-7 p-xl-0">Программная настройка</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step6.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row">
+                                <p class="col-5 m-0">07</p>
+                                <h3 class="col-7 p-xl-0">Наполнение контентом</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step7.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-12 col-md-6 p-3">
+                            <div class="row even">
+                                <p class="col-5 m-0">08</p>
+                                <h3 class="col-7 p-xl-0">Тестирование и запуск</h3>
+                            </div>
+                            <div class="lol">
+                                <img src="/img/step8.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="row step-map d-none d-md-flex">
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row">
+                        <p class="col-5 m-0">01</p>
+                        <h3 class="col-7 p-xl-0">Анализируем будущий проект</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step1.png">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row even">
+                        <p class="col-5 m-0">02</p>
+                        <h3 class="col-7 p-xl-0">Пишем техническое задание</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step2.png">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row">
+                        <p class="col-5 m-0">03</p>
+                        <h3 class="col-7 p-xl-0">Создаем прототип</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step3.png">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row even">
+                        <p class="col-5 m-0">04</p>
+                        <h3 class="col-7 p-xl-0">Разрабатываем дизайн</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step4.png">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row">
+                        <p class="col-5 m-0">05</p>
+                        <h3 class="col-7 p-xl-0">Адаптивная верстка</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step5.png">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row even">
+                        <p class="col-5 m-0">06</p>
+                        <h3 class="col-7 p-xl-0">Программная настройка</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step6.png">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row">
+                        <p class="col-5 m-0">07</p>
+                        <h3 class="col-7 p-xl-0">Наполнение контентом</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step7.png">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <div class="row even">
+                        <p class="col-5 m-0">08</p>
+                        <h3 class="col-7 p-xl-0">Тестирование и запуск</h3>
+                    </div>
+                    <div class="lol">
+                        <img src="/img/step8.png">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <a href="/pages/costCalculation.html" class="btn mx-auto">Заказать Проект</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <h2 class="mb-5">Давайте обсудим Ваш <span class="red-gradient">проект</span></h2>
+            <p class="mb-5">Объясните нам свой проект, и мы свяжемся с Вами сразу же как сделаем расчет.</p>
+            <form action="index.html" method="post">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <input class="mb-5" type="text" id="name" name="name" placeholder="Имя">
+                        <input class="mb-5 mt-3" id="number_or" type="tel" name="number_or" placeholder="Tелефон">
+                        <input class="mt-3 " type="email" id="mail" name="mail" placeholder="E-mail">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <textarea class="mt-5 mt-md-0 mb-5 p-2" id="description-task" name="description-task"
+                            placeholder="Опишите кратко, что Вам нужно"></textarea>
+                        <button type="submit" class="btn">отправить сообщение</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="services py-5">
+        <div class="container my-5">
+            <h2 class="mb-5">Дополнительные <span class="red">услуги</span></h2>
+            <div class="row justify-content-between">
+                <div class="row col-12 col-md-6 col-xl-12">
+                    <div class="col-12 col-xl-6 p-3 p-md-0">
+                        <img class="mb-4 mb-xl-0" src="/img/services1.png">
+                    </div>
+                    <div class="col-12 col-xl-6 p-3 p-md-0 d-flex align-items-center">
+                        <div class="services-content mx-0 mx-md-auto">
+                            <h3 class="mb-4">Маркетинг и продвижение</h3>
+                            <ul>
+                                <li>Поисковая оптимизация</li>
+                                <li>Уникальный контент</li>
+                                <li>Контекстная и банерная реклама</li>
+                                <li>Продвижение в соцсетях</li>
+                            </ul>
+                            <a href="/pages/costCalculation.html" class="btn mt-4">Заказать продвижение</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-12 col-md-6 col-xl-12 rev">
+                    <div class="col-12 col-xl-6 p-3 p-md-0 d-flex align-items-center rev-2">
+                        <div class="services-content mx-0 mx-md-auto">
+                            <h3 class="mb-4">Дизайн</h3>
+                            <ul>
+                                <li>Разработка корпоративного стиля</li>
+                                <li>Разработка логотипа</li>
+                                <li>Уникальный дизайн для Вашего сайта</li>
+                            </ul>
+                            <a href="/pages/costCalculation.html" class="btn mt-4">Заказать продвижение</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 p-3 p-md-0 rev-1">
+                        <img class="mb-4 mb-xl-0" src="/img/services2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container d-grid">
+            <a href="#" class="logo mx-auto mx-lg-0">
+                <h4><span class="red">An</span>Design</h4>
+                <p>Web Studio</p>
+            </a>
+            <ul class="nav row d-none d-lg-flex">
+                <li class="col-md-3"><a href="#serv">
+                        <div class="btn-nav">
+                            <span class="nav-label">Услуги</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="#guar">
+                        <div class="btn-nav">
+                            <span class="nav-label">Цены</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="#port">
+                        <div class="btn-nav">
+                            <span class="nav-label">Портфолио</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-3"><a href="/pages/contact.html">
+                        <div class="btn-nav">
+                            <span class="nav-label">Контакты</span>
+                            <span class="nav-icon">
+                                <span></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="social d-flex align-items-center justify-content-end  mx-auto mx-lg-0">
+                <a href="https://www.youtube.com/" target="_blank" class="youtube-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.2651 17.1181V7.09696C17.8226 8.77094 20.5778 10.388 23.8365 12.1315C21.1488 13.622 17.8226 15.2945 14.2651 17.1181ZM34.0911 2.11301C33.4774 1.30451 32.4315 0.675158 31.318 0.466801C28.0451 -0.154716 7.62676 -0.156484 4.35563 0.466801C3.46269 0.634194 2.66756 1.03881 1.98452 1.66745C-0.893504 4.3387 0.00833246 18.6637 0.702048 20.9842C0.993762 21.9886 1.37087 22.713 1.8458 23.1884C2.45769 23.8171 3.29547 24.2499 4.25778 24.444C6.95259 25.0014 20.8358 25.3131 31.2611 24.5277C32.2216 24.3603 33.0718 23.9135 33.7424 23.2582C36.4034 20.5976 36.222 5.46809 34.0911 2.11301Z" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/" target="_blank" class="vk-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.7074 12.0254C22.0217 11.7299 22.0217 10.6012 21.9792 9.81528C21.8077 7.01568 22.6649 2.74163 21.6363 0.924486C20.9081 -0.156997 17.3932 -0.0579657 15.251 0.089795C14.6503 0.188826 13.9221 0.335016 13.4078 0.630538C12.8936 0.926059 12.3793 1.4165 12.3793 1.85821C12.3793 2.49641 13.6657 2.39895 14.1361 3.23364C14.6503 4.11863 14.6503 6.03323 14.6503 7.60515C14.6503 9.4223 14.3925 11.8305 13.7507 11.9279C12.7647 11.9767 12.2079 10.8465 11.6936 10.0118C10.665 8.39112 9.63646 6.37591 8.86436 4.41101C8.47899 3.37983 8.26368 2.24962 7.70689 1.80791C6.84976 1.1194 5.30692 1.07068 3.80659 1.11941C2.43518 1.16813 0.463094 0.971645 0.0777271 1.90537C-0.222612 2.93655 0.42058 3.919 0.763433 4.75526C2.52021 9.12678 4.4059 12.9591 6.72084 16.5934C8.86436 19.9825 10.8776 22.6846 14.8204 24.1088C15.9354 24.5017 20.8203 25.632 21.8064 24.1088C22.1492 23.5193 22.0642 22.1926 22.2356 21.2101C22.407 20.2277 22.621 19.2452 23.4356 19.1965C24.1213 19.1478 24.5067 19.8347 24.9359 20.3267C25.4077 20.8675 25.7931 21.3092 26.1359 21.8012C26.9505 22.7349 27.8077 24.0113 28.8362 24.5033C30.2501 25.1918 32.4362 24.9953 34.4933 24.8963C36.165 24.8476 37.365 24.4546 37.4939 23.3244C37.5803 22.4394 36.7218 21.163 36.2076 20.4258C34.9212 18.6086 34.3219 18.0679 32.8641 16.3969C32.2209 15.6597 31.4063 14.8737 31.4063 13.9903C31.3637 13.4496 31.7491 12.9591 32.092 12.4184C33.5923 9.86401 35.0926 8.04687 36.464 5.39346C36.8494 4.6075 37.7504 2.79036 37.4075 1.90537C37.0222 0.922915 34.8787 1.21686 33.5498 1.21686C31.8355 1.21686 29.607 1.0691 29.1777 1.46208C28.3631 2.10028 28.0202 3.13304 27.6349 4.11549C26.7777 6.37591 25.6203 8.68349 24.4203 10.4032C23.991 10.9926 23.1778 12.2203 22.706 12.0238L22.7074 12.0254Z" />
+                    </svg>
+                </a>
+                <a href="https://web.telegram.org/a/" target="_blank" class="tg-icon">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.771 16.9748L11.2747 23.9548C11.9847 23.9548 12.2922 23.6498 12.661 23.2836L15.9897 20.1023L22.8872 25.1536C24.1522 25.8586 25.0435 25.4873 25.3847 23.9898L29.9122 2.7748L29.9135 2.77355C30.3147 0.903554 29.2372 0.172304 28.0047 0.631054L1.39223 10.8198C-0.424016 11.5248 -0.396516 12.5373 1.08348 12.9961L7.88723 15.1123L23.691 5.22356C24.4347 4.73106 25.111 5.00356 24.5547 5.49606L11.771 16.9748Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="year m-auto m-lg-0 mt-lg-5">
+                ©2023 AnDesign Создание сайтов для бизнеса
+            </p>
+        </div>
+    </footer>
+
+    <div class="order_call container p-5">
+        <svg class="close" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 1L18.5 19M18.5 1L0.5 19" stroke="#888" stroke-width="1.02857" />
+        </svg>
+        <h3 class="mb-5">Заказать звонок</h3>
+        <p>Оставьте номер телефона и я перезвоню Вам <b>в течении 30 минут</b> и подробно <b>отвечу</b> на все вопросы
+            по созданию сайта</p>
+        <form class="mt-5" action="index.html" method="post">
+            <input id="number_or" type="tel" name="number_or" value="+7" placeholder="+7">
+            <div>
+                <button type="submit" class="btn mt-5">Заказать звонок</button>
+            </div>
+        </form>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
