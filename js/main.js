@@ -81,7 +81,6 @@ window.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
     if (grat) {
         closeModal(grat);
     }
