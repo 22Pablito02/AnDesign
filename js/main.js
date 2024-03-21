@@ -1,16 +1,15 @@
 let theToggle = document.getElementById('toggle');
 
-// hasClass
 function hasClass(elem, className) {
     return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 }
-// addClass
+
 function addClass(elem, className) {
     if (!hasClass(elem, className)) {
         elem.className += ' ' + className;
     }
 }
-// removeClass
+
 function removeClass(elem, className) {
     let newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
     if (hasClass(elem, className)) {
@@ -20,7 +19,7 @@ function removeClass(elem, className) {
         elem.className = newClass.replace(/^\s+|\s+$/g, '');
     }
 }
-// toggleClass
+
 function toggleClass(elem, className) {
     let newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
     if (hasClass(elem, className)) {
@@ -67,16 +66,13 @@ window.addEventListener("DOMContentLoaded", function () {
             calcFinish.style.display = "block"
         }
     }
-    function closeOrderCall() {
-        orderCall.style.display = "none";
-        overlay.style.display = "none";
-        grat.style.display = "none";
-    }
 
     function closeModal(element) {
         element.addEventListener('click', function (event) {
             if (event.target.matches('.close')) {
-                closeOrderCall();
+                orderCall.style.display = "none";
+                overlay.style.display = "none";
+                grat.style.display = "none";
             }
         });
     }
@@ -108,7 +104,7 @@ window.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             orderCall.innerHTML = originalContent;
             closeOrderCall();
-        }, 3000);
+        }, 5000);
     });
 
 
@@ -136,7 +132,8 @@ window.addEventListener("DOMContentLoaded", function () {
                         return "\\d{1," + a.length + "}"
                     }).replace(/[+()]/g, "\\$&");
                 reg = new RegExp("^" + reg + "$");
-                if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+                if (!reg.test(this.value) || this.value.length < 5 ||
+                    keyCode > 47 && keyCode < 58) this.value = new_value;
                 if (event.type == "blur" && this.value.length < 5) this.value = ""
             }
 
@@ -159,35 +156,34 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        // Проверка на пустые поля
         if (!nameInput.value.trim() || !numberInput.value.trim() || !emailInput.value.trim() || !descriptionInput.value.trim()) {
             alert('Пожалуйста, заполните все поля.');
             return;
         }
 
-        const formData = new FormData(this); 
+        const formData = new FormData(this);
         const url = this.getAttribute('action');
 
         fetch(url, {
             method: 'POST',
             body: formData
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Ошибка сети');
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log('Данные успешно отправлены:', data);
-            nameInput.value = '';
-            numberInput.value = '';
-            emailInput.value = '';
-            descriptionInput.value = '';
-        })
-        .catch(error => {
-            console.error('Ошибка отправки данных:', error.message);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ошибка сети');
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log('Данные успешно отправлены:', data);
+                nameInput.value = '';
+                numberInput.value = '';
+                emailInput.value = '';
+                descriptionInput.value = '';
+            })
+            .catch(error => {
+                console.error('Ошибка отправки данных:', error.message);
+            });
     });
 });
 
@@ -209,27 +205,27 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const formData = new FormData(this); 
-        const url = this.getAttribute('action'); 
+        const formData = new FormData(this);
+        const url = this.getAttribute('action');
 
         fetch(url, {
             method: 'POST',
             body: formData
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Ошибка сети');
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log('Данные успешно отправлены:', data);
-            phoneInput.value = '';
-            emailInput.value = '';
-        })
-        .catch(error => {
-            console.error('Ошибка отправки данных:', error.message);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ошибка сети');
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log('Данные успешно отправлены:', data);
+                phoneInput.value = '';
+                emailInput.value = '';
+            })
+            .catch(error => {
+                console.error('Ошибка отправки данных:', error.message);
+            });
     });
 });
 
